@@ -11,7 +11,6 @@ from logger import logger
 def run_agent():
     try:
         logger.info("Candidate Agent initialized")
-        logger.info(f"Running in {AGENT_MODE} mode")
         candidates = get_candidates()
         logger.info("Candidate data loaded")
         required_skills = ["Python", "SQL", "ML"]
